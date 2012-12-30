@@ -13,10 +13,11 @@ can_ok( 'TestRole',     'included' );
 can_ok( TestRole->meta, 'include_callbacks' );
 
 subtest included => sub {
+    # Sanity check
     is( scalar( @{ TestRole->meta->include_callbacks } ),
         0, 'included_callbacks should start empty' );
 
-    TestRole->included( sub { 'george the whale' } );
+    TestRole::included( sub { 'george the whale' } );
     is( scalar( @{ TestRole->meta->include_callbacks } ),
         1, 'should add the callback to included_callbacks list' );
 

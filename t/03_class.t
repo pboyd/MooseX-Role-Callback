@@ -11,7 +11,7 @@ use lib "$Bin/lib";
 use TestRole;
 
 my $callback_args;
-TestRole->included(sub {
+TestRole::included(sub {
     $callback_args = \@_;
     return;
 });
