@@ -1,5 +1,9 @@
 package MooseX::Role::Callback;
 
+our $VERSION = '0.01';
+
+# ABSTRACT: Execute a callback function when a role is applied
+
 use strict;
 use warnings;
 
@@ -32,6 +36,8 @@ MooseX::Role::Callback
 =head1 SYNOPSIS
 
 =head1 DESCRIPTION
+
+Execute a callback function when a role is applied.
 
 =head1 FUNCTIONS
 
